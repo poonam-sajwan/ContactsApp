@@ -1,0 +1,36 @@
+<%- include("partials/header"); -%>
+
+<!-- third column -->
+<div class="all-message">
+<div class="heading">
+  Messages
+</div>
+  <div class="single-messages">
+    <%messageList.forEach(function(message){%>
+      <div class="one-message">
+        <div class="contact">
+          <h4><%=message[0]%></h4>
+          <h6><%=message[2]%></h6>
+        </div>
+        <div class="msg">
+        <p><%=message[3]%></p>
+        </div>
+
+      </div>
+
+    <%})%>
+
+  </div>
+  </div>
+  <!-- <div class="send-message">
+    <form class="" action="/personMessage" method="post">
+      <div class="textarea">
+      <textarea name="msg" rows="4" cols="80"></textarea>
+      </div>
+    <button type="submit" name="button"><i class="fas fa-paper-plane"></i></button>
+    </form>
+
+  </div>
+</div> -->
+<!-- third column ends -->
+<%- include("partials/footer"); -%>

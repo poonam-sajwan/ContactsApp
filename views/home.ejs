@@ -1,0 +1,30 @@
+
+<%- include("partials/header"); -%>
+
+
+<!-- all contacts -->
+
+<div class="Contacts">
+      <div class="heading">
+        Contacts
+      </div>
+      <div class="all-contacts">
+          <% contactList.forEach(function(contact){ %>
+
+<!-- <i class="fas fa-phone"> -->
+            <a href="/contacts/<%=contact[1]%>">
+            <div class="contact-info">
+            <h4><%= contact[0] %></h4>
+            <h4><%= contact[1] %></h4>
+            </div>
+            </a>
+          <% }) %>
+
+      </div>
+
+
+</div>
+<!-- all contacts ends  -->
+
+
+<%- include("partials/footer"); -%>

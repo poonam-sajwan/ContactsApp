@@ -1,0 +1,22 @@
+<%- include("partials/header"); -%>
+
+<div class="single-contact">
+  <div class="heading">
+    Contact info
+  </div>
+  <div class="contact-info">
+    <h2><i class="fas fa-user"></i><%=name%></h2>
+    <h3><i class="fas fa-phone"></i><%=number%></h3>
+  </div>
+  <div class="contact-msg">
+    <form class="" action="/contacts/<%=number %>" method="post">
+      <div class="textarea">
+      <textarea name="msg" rows="4" cols="80"></textarea>
+      </div>
+    <button type="submit" name="button"><i class="fas fa-paper-plane"></i></button>
+    </form>
+
+  </div>
+</div>
+
+<%- include("partials/footer"); -%>
